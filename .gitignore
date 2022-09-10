@@ -1,10 +1,12 @@
-datalake/
 venv/
 *.xml
 *.xml.rels
 *.bin
 *.png
+*.parquet
 __pycache__/
 logs/
 _rels/
 docProps/
+diesel_uf_type/
+oil_uf_product/
