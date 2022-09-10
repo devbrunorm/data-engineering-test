@@ -1,0 +1,10 @@
+datalake/
+venv/
+*.xml
+*.xml.rels
+*.bin
+*.png
+__pycache__/
+logs/
+_rels/
+docProps/

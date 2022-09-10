@@ -1,0 +1,14 @@
+version: "3"
+services:
+  extractor:
+    build: ./extractor
+    volumes:
+      - ./datalake:/datalake
+      - ./assets:/assets
+  transformer:
+    build: ./transformer
+    volumes:
+      - ./datalake:/datalake
+    depends_on:
+      extractor:
+        condition: service_completed_successfully
